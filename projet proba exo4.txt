@@ -1,0 +1,29 @@
+EXERCICE 4:
+1)
+Si X = (X1, . . . , Xn) est un vecteur gaussien alors <a, X> =somme des i allant de 1 a n suit une loi  aiXi suit une loi
+normale de paramaetres
+E[<a, X>] = E[a1X1 + · · · + anXn] = a1E[X1] + · · · + anE[Xn] = <a, E[X]> 
+Var(<a, X> ) = Var(a1X1 + · · · + anXn) = somme des i,j=1  a de(aiaj Cov(Xi, Xj ) = at Cov(X)a.
+La v.a. <a, X> suit donc la loi N ( <a, E[X]>, at Cov(X)a), sa fonction caract´eristique est
+donnee par:
+φ<a,X>(x) = exp (
+ix<a, E[X] >− 1/2(at Cov(X)a)x**2)
+On peut en deduire que pour un vecteur gaussien X de moyenne b et de matrice de variance V la fonction s'ecrit:
+φx(u)=exp<u,b>-1/2<u,vu>  
+2)
+Pour tout t ∈ R,
+ϕεX(t) = E(exp(itεX))=double integralle(exp(itux) Pε(du) PX(dx)
+       =integralle E(exp(itux))Pε(du)
+       = E(e(itX)P(ε = 1) + E(exp(−itX)P (ε = −1)
+       = E(exp(itX)= ϕX(t).
+Notons que PX = P−X si et seulement si ϕX est une fonction paire sur R, ce qui est le cas
+si par exemple X admet une fonction de densité qui est symétrique sur R.
+3)
+Si le moment d'ordre k d'une variable aléatoire X existe,
+alors la fonction caractéristique de X est k fois dérivable et : E(Xk) = 1 ik ϕ(k)(0). 
+Preuve. On considère ici le cas réel. La démonstration est similaire dans le cas dénombrable.
+On suppose que X admet une densité f. Si E(Xk) existe, la fonction x→ (ix)k exp(itx) f(x) est 
+uniformément intégrable et d'après les propriétés des intégrales, ϕX est k fois dérivable et 
+ϕ(k)(t) = integralle (entre+∞ et −∞)de (ix)k exp(itx) f(x) dx,
+c'est-à-dire, pour tout t ∈R : ϕ(k)(t) = E((iX)kexp(itX)).
+En particulier, pour t = 0 : ϕx(k)(0) = E(ik Xk exp(0)) = ik E(Xk),pour k=1,...,p.
